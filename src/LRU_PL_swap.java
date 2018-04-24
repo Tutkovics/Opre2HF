@@ -20,8 +20,6 @@ public class LRU_PL_swap {
         fifo.add(frames[2]);
         fifo.add(frames[3]);
 
-
-
         Map<Character, Integer> inMemory = new HashMap< Character, Integer>();
         inMemory.put(frames[0],0);
         inMemory.put(frames[1],0);
@@ -33,7 +31,6 @@ public class LRU_PL_swap {
             for (Character c: locks.keySet()) {
                 locks.put(c, locks.get(c)-1);
             }
-
 
             wasInMemory = false;
             // is in the memory?
