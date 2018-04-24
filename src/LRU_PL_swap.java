@@ -59,10 +59,9 @@ public class LRU_PL_swap {
                 Character useFrame = fifo.get(0);
 
 
-
                 for(Character c: locks.keySet()){
                     // there isn't lock
-                    if(locks.get(c) <= 0){
+                    if(c.equals(useFrame) && locks.get(c) <= 0){
                         fifo.remove(0);
                         fifo.add(useFrame);
 

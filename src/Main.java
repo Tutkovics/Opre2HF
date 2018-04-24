@@ -8,19 +8,19 @@ public class Main {
         Character[] frames = {'A', 'B', 'C', 'D'};
 
         // get the pages in correct order
-        Scanner sc = new Scanner(System.in).useDelimiter("[,\\s]");
-        while(sc.hasNextInt()) {
-            int i = sc.nextInt();
-
-            pages.add(i);
-        }
-//        pages.add(1);
-//        pages.add(2);
-//        pages.add(3);
-//        pages.add(4);
-//        pages.add(1);
-//        pages.add(5);
-//        pages.add(6);
+//        Scanner sc = new Scanner(System.in).useDelimiter("[,\\s]");
+//        while(sc.hasNextInt()) {
+//            int i = sc.nextInt();
+//
+//            pages.add(i);
+//        }
+        pages.add(1);
+        pages.add(2);
+        pages.add(3);
+        pages.add(4);
+        pages.add(1);
+        pages.add(5);
+        pages.add(6);
 
         FIFO_swap.algorithm(pages,frames);
         LRU_swap.algorithm(pages, frames);
